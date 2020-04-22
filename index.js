@@ -3,6 +3,7 @@ const path = require('path');
 const pug = require('pug');
 
 const bodyParser = require('body-parser');
+const agent = require('superagent');
 
 const keys = require('./config/keys');
 
@@ -11,7 +12,7 @@ const app = express();
 app.set('view engine', 'pug');
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended:false }));
+app.use(bodyParser.urlencoded({ extended:true }));
 
 // Static Files in Public Directory
 app.use(express.static(path.join(__dirname, 'public')));

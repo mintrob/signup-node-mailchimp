@@ -4,7 +4,7 @@ head
 
 body
 	.main-wrapper
-		form(action='signup' method='POST')
+		form(action='/signup' method='POST')
 			.form-case
 				label.form-label.blind(for='firstname')
 				input.form-input.form-input-half(type='text' name='firstname' id='firstname')
@@ -14,7 +14,4 @@ body
 			.form-case
 				label.form-label.blind(for='email')
 				input.form-input(type='email' name='email' id='email')
-			.form-case
-				label.form-label.blind(for='disclaimer')
-				input.form-input(type='checkbox' name='disclaimer' id='disclaimer' value='Lorem Ipsum')
 			input.form-input.form-btn(type='submit' value='Sign Up')
