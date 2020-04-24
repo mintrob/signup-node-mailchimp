@@ -1,7 +1,9 @@
-head
-	title MINT - Global Mass Digital Production - Successful Sign Up
-	link(href='/css/signup.css' rel='stylesheet')
+block config
+	include config
 
-body
-	.main-wrapper
-		h1 Thanks, you have subscribed successfully!
+	include head
+		title Successful Sign Up - #{siteTitle}
+
+	body
+		.main-wrapper
+			h1 Thanks, you have subscribed successfully!

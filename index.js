@@ -3,7 +3,6 @@ const path = require('path');
 const pug = require('pug');
 
 const bodyParser = require('body-parser');
-const agent = require('superagent');
 
 const keys = require('./config/keys');
 

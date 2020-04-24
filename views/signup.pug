@@ -1,17 +1,21 @@
-head
-	title MINT - Global Mass Digital Production - Sign Up Now
-	link(href='/css/signup.css' rel='stylesheet')
+block config
+	include config
 
-body
-	.main-wrapper
-		form(action='/signup' method='POST')
-			.form-case
-				label.form-label.blind(for='firstname')
-				input.form-input.form-input-half(type='text' name='firstname' id='firstname')
-			.form-case
-				label.form-label.blind(for='surname')
-				input.form-input.form-input-half(type='text' name='lastname' id='lastname')
-			.form-case
-				label.form-label.blind(for='email')
-				input.form-input(type='email' name='email' id='email')
-			input.form-input.form-btn(type='submit' value='Sign Up')
+	include head
+		title Sign Up Now - #{siteTitle}
+
+	// Start of Body
+	body
+
+		.main-wrapper
+			form(action='/signup' method='POST')
+				.form-case
+					label.form-label.blind(for='firstname')
+					input.form-input.form-input-half(type='text' name='firstname' id='firstname')
+				.form-case
+					label.form-label.blind(for='surname')
+					input.form-input.form-input-half(type='text' name='lastname' id='lastname')
+				.form-case
+					label.form-label.blind(for='email')
+					input.form-input(type='email' name='email' id='email')
+				input.form-input.form-btn(type='submit' value='Sign Up')
