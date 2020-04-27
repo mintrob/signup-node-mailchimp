@@ -7,15 +7,22 @@ block config
 	// Start of Body
 	body
 
-		.main-wrapper
-			form(action='/signup' method='POST')
-				.form-case
-					label.form-label.blind(for='firstname')
-					input.form-input.form-input-half(type='text' name='firstname' id='firstname')
-				.form-case
-					label.form-label.blind(for='surname')
-					input.form-input.form-input-half(type='text' name='lastname' id='lastname')
-				.form-case
-					label.form-label.blind(for='email')
-					input.form-input(type='email' name='email' id='email')
-				input.form-input.form-btn(type='submit' value='Sign Up')
+		.case.case-sticky-left
+			.case-inner.case-inner-brand
+				img(src='/assets/mint-logo-black.svg')
+
+			nav(class='case-inner section-nav-case')
+				p(class='section-nav-item') Subscribe
+
+			nav(class='case-inner social-nav-case')
+				ul(class='social-nav')
+					li(class='social-icon' id='social-nav-fb')
+						i(class='fab fa-facebook-f')
+					li(class='social-icon' id='social-nav-tw')
+						i(class='fab fa-twitter')
+					li(class='social-icon' id='social-nav-li')
+						i(class='fab fa-linkedin-in')
+					li(class='social-icon' id='social-nav-insta')
+						i(class='fab fa-instagram')
+					li(class='social-icon' id='social-nav-yt')
+						i(class='fab fa-youtube')
