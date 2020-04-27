@@ -19,11 +19,12 @@ ul { list-style-type:none;display:inline;text-align:center; }
 .case-sticky-left { width:8rem;height:100vh;border-right:1px solid #d3d3d3;background:transparent;position:fixed;top:0;left:0;z-index:10; }
 .case-inner-brand { width:80%;height:80%;margin:0 auto; }
 nav.section-nav-case, nav.social-nav-case { width:100%;position:absolute; }
-.section-nav-item, .social-nav-case ul li { color:#c0c0c0; }
+.section-nav-item, .social-nav-case ul li a { color:#c0c0c0; }
 nav.section-nav-case { top:10rem;text-align:center; }
 .section-nav-item { text-transform:uppercase;transform:rotate(-90deg);letter-spacing:3.54px;font-weight:500;font-size:14px;color:#030301; }
 .section-nav-item:before { content:'';width:0;height:6rem;position:absolute;border-left:4px solid #030301;top:-39px;left:-52px;transform:rotate(-90deg); }
 nav.social-nav-case { bottom:2rem; }
-.social-icon { margin-top:1rem; }
-
+.social-icon { margin-top:1rem;cursor:pointer; }
+.social-icon a { transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
+.social-icon a:hover, .social-icon a:active { color:#030301; }
 /* End of Sticky Left */
