@@ -7,27 +7,4 @@ block config
 	// Start of Body
 	body
 
-		.case.case-sticky-left
-			.case-inner.case-inner-brand
-				img(src='/assets/mint-logo-black.svg')
-
-			nav(class='case-inner section-nav-case')
-				p(class='section-nav-item') Subscribe
-
-			nav(class='case-inner social-nav-case')
-				ul(class='social-nav')
-					li(class='social-icon' id='social-nav-fb')
-						a(href='//facebook.com/mintbycheil/' target='_blank')
-							i(class='fab fa-facebook-f')
-					li(class='social-icon' id='social-nav-tw')
-						a(href='//twitter.com/mintbycheil/' target='_blank')
-							i(class='fab fa-twitter')
-					li(class='social-icon' id='social-nav-li')
-						a(href='//linkedin.com/company/mintbycheil/' target='_blank')
-							i(class='fab fa-linkedin-in')
-					li(class='social-icon' id='social-nav-insta')
-						a(href='//instagram.com/mintbycheil' target='_blank')
-							i(class='fab fa-instagram')
-					//-li(class='social-icon' id='so\cial-nav-yt')
-						a(href='//youtube.com/mintbycheil' target='_blank')
-							i(class='fab fa-youtube')//
+		include sticky-left
