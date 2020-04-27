@@ -8,3 +8,31 @@ block config
 	body
 
 		include sticky-left
+
+		main(class='case case-main')
+
+			h1(class='blind') MINT Digital Production on a Mass Global Scale primed with Quality
+
+			.case-inner
+				.case-subscribe
+					.case-subscribe-header
+						h2 Our great website is still under construction...
+						h2 Sign up to our newsletter to get MINT news first!
+					.case-subscribe-graphic
+						img(src='assets/site-building-in-progress.svg')
+					.case-subscribe-form
+						form(action='/signup' method='POST')
+							.form-row
+								.form-case.form-case-half
+									label.form-label.blind(for='firstname')
+									input.form-input(type='text' name='firstname' id='firstname' placeholder='First Name')
+								.form-case.form-case-half
+									label.form-label.blind(for='surname')
+									input.form-input(type='text' name='lastname' id='lastname' placeholder='Surname')
+							.form-row
+								.form-case
+									label.form-label.blind(for='email')
+									input.form-input(type='email' name='email' id='email' placeholder='Email Address')
+							.form-row
+								.form-case
+									input.form-input.form-btn(type='submit' value='Sign Up')
