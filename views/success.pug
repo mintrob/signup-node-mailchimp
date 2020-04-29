@@ -5,5 +5,22 @@ block config
 		title Successful Sign Up - #{siteTitle}
 
 	body
-		.main-wrapper
-			h1 Thanks, you have subscribed successfully!
+
+		include sticky-left
+
+		main(class='case case-main')
+
+			h1(class='blind') MINT Digital Production on a Mass Global Scale primed with Quality. Successful Newsletter Registration.
+
+			.case-inner
+				.case-subscribe
+					.case-subscribe-graphic
+						img(src='assets/successful-newsletter-signup.svg')
+					.case-subscribe-header
+						h2(class='welcome-msg') Welcome to our Newsletter!
+						h3 You have successfully subscribed to the MINT newsletter with the latest news and updates from the digital world and our team.
+						h3 See you soon!
+				.case-unsubscribe
+					.case-unsubscribe-footer
+						span(class='unsubscribe') Want to change how you receive these emails?
+						span(class='unsubscribe') You can update your preferences or unsubscribe here.

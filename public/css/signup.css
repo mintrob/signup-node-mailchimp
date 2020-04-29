@@ -44,14 +44,18 @@ nav.social-nav-case { bottom:2rem; }
  03 - Subscribe Section
 *************************/
 
-.case-subscribe { margin-left:128px;text-align:center; }
-.case-subscribe-header, .case-subscribe-graphic, .case-subscribe-form { max-width:80%;margin:0 auto; }
-.case-subscribe-graphic img, .case-subscribe-form form { width:50%;height:auto;margin:0 auto; }
+.case-subscribe { margin-left:128px;text-align:center;margin-top:-5rem; }
+.case-subscribe-header, .case-subscribe-graphic, .case-subscribe-form, .case-unsubscribe-footer { max-width:80%;margin:0 auto; }
+.case-subscribe-header h2, .case-subscribe-header h3, .case-subscribe-graphic img, .case-subscribe-form form, .case-unsubscribe-footer span { width:50%;height:auto;margin:0 auto; }
+.case-subscribe-header { padding-top:5rem; }
 .form-row { display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:center; }
 .form-case { display:block;width:100%;margin:0 0.3rem;display:flex;flex-direction:row;align-items:center; }
 input.form-input { padding:1rem;border:1px solid #c0c0c0;width:100%;margin-bottom:0.6rem;font-size:1rem; }
 .disclaimer { margin-top:0.4rem;margin-bottom:1rem; }
 .disclaimer span { font-size:0.7rem;text-align:left;margin-left:0.5rem; }
 input.form-input.form-btn { background-color:#48ebb7;color:#f5f5f5;font-weight:700;text-transform:uppercase;letter-spacing:3.54px;border:1px solid #48ebb7;cursor:pointer;width:50%;margin:0 auto; }
+.case-subscribe-header h2.welcome-msg { margin-bottom:1.2rem; }
+.case-unsubscribe { position:absolute;bottom:16px;width:100%;text-align:center; }
+span.unsubscribe { font-size:0.8rem;display:block;padding-left:128px; }
 
-/* End of Hero */
+/* End of Subscribe */
