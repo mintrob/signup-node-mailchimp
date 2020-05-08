@@ -5,6 +5,18 @@ module.exports = app => {
 	app.get('/', (req,res) => {
 		res.render('signup');
 	})
+	app.get('/success', (req,res) => {
+		res.render('success');
+	})
+	app.get('/tandc', (req,res) => {
+		res.render('terms');
+	})
+	app.get('/newstandc', (req,res) => {
+		res.render('newsterms');
+	})
+	app.get('/privacypolicy', (req,res) => {
+		res.render('privacy');
+	})
 	app.post('/signup', (req,res) => {
 		const { firstname, lastname, email } = req.body;
 		const data = {
@@ -37,7 +49,7 @@ module.exports = app => {
 			} else {
 				if(response.statusCode === 200) {
 					console.log(response.statusCode);
-					res.render('success');
+					res.redirect('/success');
 				} else {
 					console.log(response.statusCode);
 					res.send('Another Error');
