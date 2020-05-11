@@ -9,6 +9,7 @@ body {  font-size:16px;font-family:'Helvetica Neue', sans-serif;font-weight:400;
 h1 { font-size:2rem; }
 h1,h2,h3,h4,h5,h6 { margin:0; }
 ul { list-style-type:none;display:inline;text-align:center; }
+ol { padding-left:18px; }
 
 /* End of General Styles */
 
@@ -45,7 +46,7 @@ nav.social-nav-case { bottom:2rem; }
 *************************/
 
 .case-subscribe { margin-left:128px;text-align:center; }
-.case-subscribe-header, .case-subscribe-graphic, .case-subscribe-form, .case-subscribe-disclaimer, .case-unsubscribe-footer { max-width:80%;margin:0 auto; }
+.case-subscribe-header, .case-subscribe-graphic, .case-subscribe-content-terms, .case-subscribe-form, .case-subscribe-disclaimer, .case-unsubscribe-footer { max-width:80%;margin:0 auto; }
 .case-subscribe-header h2, .case-subscribe-header h3, .case-subscribe-graphic img, .case-subscribe-form form, .case-subscribe-disclaimer p, .case-unsubscribe-footer span { width:50%;height:auto;margin:0 auto; }
 .case-subscribe-header { padding-top:5rem; }
 .form-row { display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:center; }
@@ -62,19 +63,31 @@ span.unsubscribe { font-size:0.7rem;display:block;padding-left:128px;font-weight
 
 /* End of Subscribe */
 
+/*************************
+ 04 - Terms & Privacy
+*************************/
+
+.case-subscribe-content-terms, .section-title-terms { margin-top:4rem; }
+.case-subscribe.terms { margin-left:128px;text-align:left;margin-bottom:4rem; }
+.case-subscribe-header.terms h2, .case-subscribe-content-terms * { width:100%; }
+ol li {margin-top:1rem;}
+.term-item { display:block;margin-top:1rem; }
+
+/* End of Terms & Privacy */
+
 
 /*************************
- 04 - Media Queries
+ 05 - Media Queries
 *************************/
 
 @media screen and (max-width:850px) {
-	.case-subscribe-header h2, .case-subscribe-header h3, .case-subscribe-graphic img, .case-subscribe-form form, .case-subscribe-disclaimer p, .case-unsubscribe-footer span {
+	.case-subscribe-header h2, .case-subscribe-header h3, .case-subscribe-graphic img, .case-subscribe-form form, .case-subscribe-disclaimer p, .case-unsubscribe-footer span, .case-subscribe.terms {
 		width:80%;
 	}
 	.case.case-sticky-left {
 		display:none;
 	}
-	.case-subscribe {
+	.case-subscribe, .case-subscribe.terms {
 		margin-left:0;
 	}
 	span.unsubscribe {
@@ -83,7 +96,7 @@ span.unsubscribe { font-size:0.7rem;display:block;padding-left:128px;font-weight
 }
 
 @media screen and (max-width:600px) {
-	.case-subscribe-header, .case-subscribe-graphic, .case-subscribe-form, .case-subscribe-disclaimer, .case-unsubscribe-footer { 
+	.case-subscribe-header, .case-subscribe-graphic, .case-subscribe-form, .case-subscribe-disclaimer, .case-unsubscribe-footer, .case-subscribe.terms { 
 		width:100%;
 	}
 	.case-subscribe-header h2, .case-subscribe-header h3, .case-subscribe-graphic img, .case-subscribe-form form, input.form-input.form-btn, .case-subscribe-disclaimer p, .case-unsubscribe-footer span {

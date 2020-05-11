@@ -8,13 +8,13 @@ module.exports = app => {
 	app.get('/success', (req,res) => {
 		res.render('success');
 	})
-	app.get('/tandc', (req,res) => {
+	app.get('/terms-and-conditions/', (req,res) => {
 		res.render('terms');
 	})
 	app.get('/newstandc', (req,res) => {
 		res.render('newsterms');
 	})
-	app.get('/privacypolicy', (req,res) => {
+	app.get('/privacy-policy', (req,res) => {
 		res.render('privacy');
 	})
 	app.post('/signup', (req,res) => {
