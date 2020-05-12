@@ -11,11 +11,11 @@ module.exports = app => {
 	app.get('/terms-and-conditions/', (req,res) => {
 		res.render('terms');
 	})
-	app.get('/newstandc', (req,res) => {
-		res.render('newsterms');
+	app.get('/terms-and-conditions-newsletter', (req,res) => {
+		res.render('news-terms');
 	})
 	app.get('/privacy-policy', (req,res) => {
-		res.render('privacy');
+		res.render('privacy-policy');
 	})
 	app.post('/signup', (req,res) => {
 		const { firstname, lastname, email } = req.body;

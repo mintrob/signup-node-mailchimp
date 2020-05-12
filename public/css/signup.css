@@ -10,6 +10,7 @@ h1 { font-size:2rem; }
 h1,h2,h3,h4,h5,h6 { margin:0; }
 ul { list-style-type:none;display:inline;text-align:center; }
 ol { padding-left:18px; }
+.dash-type { list-style-type:square; }
 
 /* End of General Styles */
 
